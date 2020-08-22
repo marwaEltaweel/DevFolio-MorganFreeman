@@ -1,0 +1,541 @@
+html
+{
+    font-size: 18px;
+}
+body
+{
+    font-family: 'Noto Sans', sans-serif,'Roboto';
+    background-color: #f5f5f5f5;
+}
+h2
+{
+    font-size: 2rem;
+    color: #1e1e1e;
+    font-weight: 400;
+}
+h3
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+a
+{
+    text-decoration: none;
+}
+.underline-p
+{
+    position:relative;
+    font-family: "Roboto";
+
+}
+.underline-p::after
+{
+    content: '';
+    width:3rem;
+    height:0.3rem;
+    background-color: #0078ff;
+    position:absolute;
+    left:48%;
+    bottom:-1rem;
+}
+/* -------------------- Header ----------------*/
+.navbar-style
+{
+    display:flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+.navbar-collapse
+{
+    flex-grow:0;
+}
+.header-style
+{
+    background-image: url(../Images/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.dark-layer
+{
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.dark-layer h1
+{
+    color:white;
+    font-size:4rem;
+    margin-bottom: 1.5rem;
+    font-family: "Roboto";
+}
+
+/* --------------------- Key frames ------*/
+/* .animation_1
+{
+  animation:Paragraph1 ;
+}
+.animation_2
+{
+  animation:Paragraph2 ;
+} */
+/* .style
+{
+    color:white;
+    font-size: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; */
+/* }
+@keyframes Paragraph1
+{
+  0% {width:0ch;}
+  10% {width:14ch;}
+  40% {width:14ch;}
+  50% {width:0ch;}
+  100% {width:0ch;}
+}
+@keyframes Paragraph2
+{
+  0% {width:0ch;}
+  50% {width:0ch;}
+  60%{width:13ch;}
+  90% {width:13ch;}
+  100% {width:0ch;} */
+
+
+.animation-query h2::after
+{
+  content: "";
+  font-size: 2.5rem;
+  font-family: "Roboto";
+  font-weight:300;
+  color:white;
+  animation:animation_text 20s linear infinite;
+}
+
+@keyframes animation_text
+{
+  /*Web Design - Developer*/
+  0%{content:"|";}
+  1%{content:"W|";}
+  2%{content:"We|";}
+  3%{content:"Web| ";}
+  4%{content:"Web de|";}
+  5%{content:"Web deve|";}
+  7%{content:"Web devel|";}
+  8%{content:"Web develo|";}
+  9%{content:"Web develop|";}
+  10%{content:"Web developer|";}
+  11%{content:"Web develop|";}
+  12%{content:"Web develop|";}
+  13%{content:"Web develo|";}
+  14%{content:"Web devel|";}
+  15%{content:"Web deve|";}
+  16%{content:"Web dev|";}
+  17%{content:"Web de|";}
+  18%{content:"Web des|";}
+  19%{content:"Web desi|";}
+  20%{content:"Web desig|";}
+  21%{content:"Web design|";}
+  22%{content:"Web designer|";}
+  23%{content:"Web design|";}
+  24%{content:"Web desid|";}
+  25%{content:"Web desi|";}
+  26%{content:"Web des|";}
+  27%{content:"Web de|";}
+  28%{content:"Web|";}
+  29%{content:"We|";}
+  30%{content:"W|";}
+  31%{content:"|";}
+
+/*Frontend Developer*/
+  33%{content:"F|";}
+  34%{content:"Fr|";}
+  35%{content:"Fro|";}
+  36%{content:"Fron|";}
+  37%{content:"Front|";}
+  38%{content:"Fronte|";}
+  39%{content:"Fronten|";}
+  40%{content:"Frontend |";}
+  41%{content:"Frontend De|";}
+  42%{content:"Frontend Deve";}
+  43%{content:"Frontend Devel|";}
+  44%{content:"Frontend Develo|";}
+  45%{content:"Frontend Develop|";}
+  46%{content:"Frontend Developer|";}
+  47%{content:"Frontend Develope|";}
+  48%{content:"Frontend Develop|";}
+  49%{content:"Frontend Develo|";}
+  50%{content:"Frontend Devel|";}
+  51%{content:"Frontend Deve|";}
+  52%{content:"Frontend De|";}
+  53%{content:"Frontend |";}
+  54%{content:"Fronten|";}
+  55%{content:"Fronte|";}
+  56%{content:"Front|";}
+  57%{content:"Fron|";}
+  58%{content:"Fro|";}
+  59%{content:"Fr|";}
+  60%{content:"F|";}
+  61%{content:"|";}
+
+/*Graphic Designer*/
+  63%{content:"G|";}
+  64%{content:"Gr|";}
+  65%{content:"Gra|";}
+  66%{content:"Graph|";}
+  67%{content:"Graphic |";}
+  68%{content:"Graphic De|";}
+  69%{content:"Graphic Des|";}
+  70%{content:"Graphic Desi|";}
+  71%{content:"Graphic Desig|";}
+  72%{content:"Graphic Design|";}
+  73%{content:"Graphic Designer|";}
+  74%{content:"Graphic Design|";}
+  75%{content:"Graphic Desig|";}
+  76%{content:"Graphic Desi|";}
+  77%{content:"Graphic Des|";}
+  78%{content:"Graphic De|";}
+  79%{content:"Graphic |";}
+  80%{content:"Graphi|";}
+  81%{content:"Graph|";}
+  82%{content:"Gra|";}
+  83%{content:"Gr|";}
+  84%{content:"G|";}
+  85%{content:"|";}
+
+/*CEO DevFolio*/
+  86%{content:"C|";}  
+  87%{content:"CE|";}
+  88%{content:"CEO |";}
+  89%{content:"CEO De|";}
+  90%{content:"CEO Dev|";}
+  91%{content:"CEO DevF|";}
+  92%{content:"CEO DevFol|";}
+  93%{content:"CEO DevFolio|";}
+  94%{content:"CEO DevFo|";}
+  95%{content:"CEO DevF|";}
+  96%{content:"CEO De|";}
+  97%{content:"CEO| ";}
+  98%{content:"CE|";}
+  99%{content:"C|";}
+  100%{content:"|";}
+}
+
+
+/*-------------------------About-----------*/
+.graybrd
+{
+    border-color: gray;
+}
+.underline
+{
+    position:relative;
+    font-family: "Roboto";
+}
+.underline::after
+{
+    content: '';
+    width:6.5rem;
+    height:0.2rem;
+    background-color: #0078ff;
+    position:absolute;
+    left:0;
+    bottom:0;
+    margin-top:3rem ;
+}
+article
+{
+    font-family: "Roboto";
+}
+.span-style
+{
+    color:black;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.data-style
+{
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+#about h4
+{
+    font-size: 1rem;
+    font-family: "Roboto";
+}
+/* ------------------------ Services ----------------*/
+.p-paragraph-style
+{
+    color:black;
+    font-family: "Roboto";
+    font-size:0.9rem;
+    font-weight: 300;
+}
+.icon-style
+{
+    width:5rem;
+    height:5rem;
+    border:solid 0.5rem #0078ff;
+    border-radius: 50%;
+    padding:1.5rem; 
+}
+.icon-style:hover
+{
+    color:white;
+    background-color: #0078ff;
+    border:solid 0.5rem lightblue;
+}
+.services-item
+{
+    text-align: center !important;
+    border:solid 2px white;
+    border-radius: 5%;
+}
+/* --------------- Counters -------------------------*/
+.Statistics
+{
+    background-image: url(../Images/counters-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    /* height:60vh; */
+}
+.blue-layer
+{
+    width:100%;
+    height: 100%;
+    background-color:rgba(0, 119, 255,0.7);
+    /*position: absolute;
+    top:0;
+    left:0; */
+}
+.icon-stats-style
+{
+    color:white;
+    width:5rem;
+    height:5rem;
+    border:solid 0.5rem lightblue;
+    border-radius: 50%;
+    padding:1.5rem; 
+    background-color: transparent;
+}
+.stats-desc p
+{
+    color:white;
+    font-size:1.5rem;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.p-stats
+{
+    font-size:1rem !important;
+    font-weight: 300 !important ;
+}
+.statistics-items
+{
+    transform: translateY(50%);
+}
+/*-------------------------Work--------------------*/
+.portfolio-item-desc-text h3
+{
+    font-size:1rem;
+}
+.portfolio-item-desc-text h5
+{
+    font-size:0.7rem;
+    font-weight: 300;
+    font-family: "Roboto";
+}
+.portfolio-item-desc-text span
+{
+    color:#0078ff;
+    font-weight: 400;
+}
+.portfolio-item img
+{
+    transition: 2s ease transform;
+}
+.portfolio-item:hover img
+{
+    transform: scale(1.3);
+}
+.plus-style
+{
+    color:#0078ff;
+    font-size: 1.5rem;
+    width:2.5rem;
+    height:2.5rem;
+    border:solid 2px #0078ff;
+    border-radius: 50%;
+}
+
+/*------------------------carousel--------------------*/
+.Carousel-style
+{
+    height: 80vh;
+}
+#carouselExampleIndicators
+{
+    height: 90%;
+}
+
+.carousel-item-desc h2
+{
+    color:white;
+    font-size: 1.5rem;
+}
+.carousel-item-desc p
+{
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.icon-style2
+{
+    width:4rem;
+    height:4rem;
+    color:#0078ff;
+    background-color: white;
+    border-radius: 50%;
+    padding:1rem; 
+}
+.indicator-style
+{
+    height:0.5rem !important;
+}
+/*------------------------Blog--------------------*/
+.blog-items-text a
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: "Roboto";
+    color:black;
+}
+.blog-items-text:hover a
+{
+    color:#0078ff;
+    text-decoration: none;
+}
+.blog-items-account-a
+{
+    font-size:0.8rem;
+    font-weight: 200;
+}
+.account-p, .account-p2
+{
+    font-family: "Roboto";
+    font-size:0.9rem;
+    color:black;
+    font-weight: 300;
+}
+.account-p:hover
+{
+    color:#0078ff;
+    text-decoration: none;
+}
+.clock-icon
+{
+    color:grey;
+}
+.blog-items-account
+{
+    background-color:#f5f5f5f5;
+    border:solid 1px rgb(153, 151, 151);
+}
+.floater-style
+{
+    font-family: "Roboto";
+    font-size: 0.7rem;
+    background-color:#0078ff ;
+    color:white;
+    border:solid 1px #0078ff;
+    padding:0.3rem;
+    border-radius:10%;
+    position: absolute;
+    left:50%;
+    bottom:100%;
+    transform: translateX(-50%) translateY(50%);    
+}
+
+/*-----------------------Contact--------------------*/
+.contact-style
+{
+    font-family: "Roboto";
+    background-image: url(../Images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+#contact input , textarea
+{
+    /* font-family:'Segoe UI'; */
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.btn2
+{
+    border-radius: 5rem;
+    font-weight: 300;
+}
+.li-style
+{
+    color:#0078ff;
+}
+.ul-style
+{
+    line-height: 2.25rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.icon-contact-style
+{
+    width:1rem;
+    height:1rem;
+    border:solid 0.3rem #0078ff;
+    padding:1.25rem;
+    border-radius: 50%;
+}
+.icon-contact-style:hover
+{
+    color:white;
+    background-color: #0078ff;
+    border:solid 0.3rem lightblue;
+}
+.contact-form h2
+{
+    margin-top:0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    font-size:1.7rem !important;
+    padding-top:0.5rem;
+}
+/*------------------ Footer -----------*/
+.footer-style
+{
+    background-color:#0062d3;
+    color: white;
+    border-top:solid 2px #0062d3;
+}
+.footer-style-font
+{
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 300;
+}
+.a-style a
+{
+    color:white;
+}
